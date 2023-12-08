@@ -2,7 +2,7 @@ import requests
 
 # 发起一个API call并且检查response
 url = "https://api.github.com/search/repositories"
-url += "?q=language:pyhton+sort:stars+stars:>10000"
+url += "?q=language:python+sort:stars+stars:>10000"
 
 headers = {"Accept":"application/vnd.github.v3+json"} # v3表示GitHub的api目前是第三版
 r = requests.get(url, headers=headers)
